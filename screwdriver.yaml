@@ -18,6 +18,6 @@ jobs:
     steps:
       - echo: echo hoge
   prjob4:
-    requires: [ prjob1 ]
+    requires: [ ~commit, ~pr ]
     steps:
       - echo: echo hoge
