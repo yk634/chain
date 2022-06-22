@@ -5,16 +5,16 @@ annotations:
   screwdriver.cd/chainPR: true
 
 jobs:
-  prjob:
+  prjob1:
     requires: [ ~commit, ~pr ]
     steps:
       - echo: echo hoge
   prjob2:
-    requires: [ prjob ]
+    requires: [ prjob1 ]
     steps:
       - echo: echo hoge
   prjob3:
-    requires: [ prjob ]
+    requires: [ prjob1 ]
     steps:
       - echo: echo hoge
   prjob4:
