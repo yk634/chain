@@ -1,5 +1,5 @@
 shared:
-  image: centos:centos7
+  image: node:12
 
 annotations:
   screwdriver.cd/chainPR: true
